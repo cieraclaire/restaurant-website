@@ -38,7 +38,8 @@ h3 {
 }
 
 .card-chefs {
-  background-color: grey;
+  border-style: solid;
+  border-color: grey;
   padding: 1rem;
   margin-top: 1rem;
 }
@@ -54,19 +55,30 @@ h3 {
 }
 
 .card-packages {
-  background-color: grey;
+  border-style: solid;
+  border-color: grey;
   padding: 1rem;
   margin-top: 1rem;
 }
 
 .card-healthy-mind {
-  background-color: grey;
+  border-style: solid;
+  border-color: grey;
   padding: 1rem;
   margin-top: 1rem;
 }
 
-.healthy-body {
-  background-color: grey;
+.card-picture {
+  width: 20%;
+  position: relative;
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-healthy-body {
+  border-style: solid;
+  border-color: grey;
   padding: 1rem;
   margin: 0;
 }
