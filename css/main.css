@@ -33,16 +33,20 @@ header {
 h1 {
   font-family: "Open Sans";
   font-weight: 800;
+  display: inline;
 }
 
 h2 {
   font-family: "Open Sans";
-  font-weight: 400;
+  font-weight: 700;
 }
 
-h3 {
+.need {
   font-family: "Open Sans";
-  font-weight: 700;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .card-four {
@@ -87,6 +91,7 @@ h3 {
   float: right;
   margin-left: 1rem;
   margin-bottom: 1rem;
+
 }
 
 .card-picturetwo {
@@ -134,6 +139,8 @@ h3 {
 .img-flex {
   display: block;
   width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .banner {
@@ -168,20 +175,18 @@ h3 {
   transform: translateX(-50%);
 }
 
-nav a {
+nav a, nav ul, nav li {
   display: block;
   padding: .5em .75em;
   text-decoration: none;
-}
-
-nav ul {
   list-style-type: none;
   margin: 0;
   font-size: 1.125rem;
-  padding: 0;
   font-family: "Open Sans";
   font-weight: 400;
+  margin-left: 4rem;
 }
+
 
 .nav-icon {
   width: 8%;
@@ -221,6 +226,14 @@ footer {
   padding-bottom: 2rem;
 }
 
+.package:hover {
+  color: orange;
+}
+
+.package {
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 25em) {
 
   .card-title {
@@ -257,6 +270,7 @@ footer {
   nav li {
     display: inline-block;
     text-align: center;
+    visibility: hidden;
   }
 
 }
@@ -298,6 +312,10 @@ footer {
     padding: .5em .75em;
     color: #333;
     text-decoration: none;
+  }
+
+  nav li {
+    visibility: hidden;
   }
 
 }
@@ -346,6 +364,14 @@ footer {
     text-decoration: none;
 }
 
+  nav li {
+    visibility: visible;
+  }
+
+  .nav-icon {
+    visibility: hidden;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -390,6 +416,14 @@ footer {
     padding: .5em .75em;
     color: #333;
     text-decoration: none;
+  }
+
+  nav li {
+    visibility: visible;
+  }
+
+  .nav-icon {
+    visibility: hidden;
   }
 
 }
