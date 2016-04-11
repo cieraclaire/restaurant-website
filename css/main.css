@@ -27,13 +27,15 @@ header {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgba(255, 255, 255, 0.2);
-  padding: 50px 0px;
+  padding: 0px;
 }
 
 h1 {
   font-family: "Open Sans";
   font-weight: 800;
-  display: inline;
+  display: block;
+  position: relative;
+  padding-left: 1rem;
 }
 
 h2 {
@@ -132,15 +134,16 @@ h2 {
   color: #fff;
   padding: 0.4em 0.75em 0.60em;
   position: relative;
-  left: 30%;
+  left: 35%;
 }
-
 
 .img-flex {
   display: block;
   width: 100%;
-  overflow: hidden;
   position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .banner {
@@ -187,13 +190,13 @@ nav a, nav ul, nav li {
   margin-left: 4rem;
 }
 
-
 .nav-icon {
   width: 8%;
   float: right;
   right: 9%;
   top: 3%;
   position: absolute;
+  padding-top: 1rem;
 }
 
 nav a:hover {
@@ -202,6 +205,7 @@ nav a:hover {
 
 body {
   background-color: #fff;
+
 }
 
 footer {
@@ -273,6 +277,10 @@ footer {
     visibility: hidden;
   }
 
+.nav-icon {
+  width: 5%;
+}
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -316,6 +324,11 @@ footer {
 
   nav li {
     visibility: hidden;
+  }
+
+  .nav-icon {
+    visibility: visible;
+    width: 5%;
   }
 
 }
@@ -424,6 +437,7 @@ footer {
 
   .nav-icon {
     visibility: hidden;
+    width: 35%;
   }
 
 }
