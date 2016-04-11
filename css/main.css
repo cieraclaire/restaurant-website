@@ -17,12 +17,36 @@ html {
 	box-sizing: inherit;
 }
 
+/* start of nav */
 .navigation {
   position: fixed;
   width: 100%;
   z-index: 999;
 }
 
+.nav-icon {
+  width: 8%;
+  float: right;
+  right: 9%;
+  top: 3%;
+  position: absolute;
+  padding-top: 1rem;
+}
+
+nav a, nav ul, nav li {
+  display: block;
+  padding: .5em .75em;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  font-size: 1.125rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-left: 4rem;
+}
+/* end of nav */
+
+/* start of headers */
 header {
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -42,28 +66,44 @@ h2 {
   font-family: "Open Sans";
   font-weight: 700;
 }
+/* end of headers */
 
-.need {
-  font-family: "Open Sans";
-  font-weight: 400;
-  color: #fff;
+/* start of cards */
+.card {
+  width: 20%;
+  position: relative;
+  padding-top: 2rem;
+  margin-left: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 15px;
+}
+
+.card-title {
+  max-width: 100%;
+  margin: 0;
+  font-size: 4rem;
+  font-style: normal;
+  color: white;
+  line-height: 1.4;
+  left: 30%;
+  padding: 0;
+  position: relative;
+}
+
+.card-body {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  max-width: 45rem;
+  width: 100%;
+  font-style: normal;
   font-size: 2rem;
-  text-align: center;
+  margin: 0;
+  padding: 0 1rem;
+  transform: translateX(-50%);
 }
 
-.card-four {
-  font-family: "Open Sans";
-  font-weight: 400;
-}
-
-.card-chefs {
-  border-style: solid;
-  border-color: grey;
-  padding: 1rem;
-  margin-top: 1rem;
-}
-
-.card-three {
+.card-one {
   font-family: "Open Sans";
   font-weight: 400;
 }
@@ -73,16 +113,61 @@ h2 {
   font-weight: 400;
 }
 
+.card-three {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.card-four {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+/* end of cards */
+
+/* pictures */
+
+/* start of body */
+body {
+  background-color: #adabab;
+}
+/* end of body */
+
+/* start of hover */
+nav a:hover {
+  color: orange;
+}
+
+.package:hover {
+  color: orange;
+}
+/* end of hover */
+
+
+.need {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card-chefs {
+  border-style: solid;
+  border-color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
 .card-packages {
   border-style: solid;
-  border-color: grey;
+  border-color: #fff;
   padding: 1rem;
   margin-top: 1rem;
 }
 
 .card-healthy-mind {
   border-style: solid;
-  border-color: grey;
+  border-color: #fff;
   padding: 1rem;
   margin-top: 1rem;
 }
@@ -114,14 +199,9 @@ h2 {
 
 .card-healthy-body {
   border-style: solid;
-  border-color: grey;
+  border-color: #fff;
   padding: 1rem;
   margin: 0;
-}
-
-.card-one {
-  font-family: "Open Sans";
-  font-weight: 400;
 }
 
 .btn-subtle {
@@ -134,7 +214,7 @@ h2 {
   color: #fff;
   padding: 0.4em 0.75em 0.60em;
   position: relative;
-  left: 35%;
+  left: 39%;
 }
 
 .img-flex {
@@ -153,61 +233,6 @@ h2 {
   position: relative;
 }
 
-.card-title {
-  max-width: 100%;
-  margin: 0;
-  font-size: 4rem;
-  font-style: normal;
-  color: white;
-  line-height: 1.4;
-  left: 30%;
-  padding: 0;
-  position: relative;
-}
-
-.card-body {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  max-width: 45rem;
-  width: 100%;
-  font-style: normal;
-  font-size: 2rem;
-  margin: 0;
-  padding: 0 1rem;
-  transform: translateX(-50%);
-}
-
-nav a, nav ul, nav li {
-  display: block;
-  padding: .5em .75em;
-  text-decoration: none;
-  list-style-type: none;
-  margin: 0;
-  font-size: 1.125rem;
-  font-family: "Open Sans";
-  font-weight: 400;
-  margin-left: 4rem;
-}
-
-.nav-icon {
-  width: 8%;
-  float: right;
-  right: 9%;
-  top: 3%;
-  position: absolute;
-  padding-top: 1rem;
-}
-
-nav a:hover {
-  color: orange;
-}
-
-body {
-  background-color: #fff;
-
-}
-
 footer {
   background-color: #ccc;
   margin-top: 1rem;
@@ -220,18 +245,7 @@ footer {
   padding-top: 2rem;
   position: relative;
   margin-left: 1rem;
-}
-
-.card {
-  width: 20%;
-  position: relative;
-  padding-top: 2rem;
-  margin-left: 1rem;
-  padding-bottom: 2rem;
-}
-
-.package:hover {
-  color: orange;
+  padding-left: 15px;
 }
 
 .package {
@@ -239,6 +253,16 @@ footer {
 }
 
 @media only screen and (min-width: 25em) {
+
+  .circle {
+    position: relative;
+    right: 3%;
+  }
+
+  .card {
+    position: relative;
+    right: 3%;
+  }
 
   .card-picture {
     width: 20%;
@@ -308,6 +332,16 @@ footer {
 }
 
 @media only screen and (min-width: 38em) {
+
+  .circle {
+    position: relative;
+    left: 2%;
+  }
+
+  .card {
+    position: relative;
+    left: 2%;
+  }
 
   .card-picture {
     width: 28%;
@@ -382,6 +416,16 @@ footer {
 }
 
 @media only screen and (min-width: 60em) {
+
+  .circle {
+    position: relative;
+    left: 4%;
+  }
+
+  .card {
+    position: relative;
+    left: 4%;
+  }
 
   .card-picture {
     width: 28%;
