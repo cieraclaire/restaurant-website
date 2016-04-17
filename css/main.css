@@ -8,7 +8,7 @@ html {
 	box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font: normal 100%/1.3 Georgia sans-serif;
 }
@@ -85,9 +85,9 @@ h2 {
   font-style: normal;
   color: white;
   line-height: 1.4;
-  left: 30%;
-  padding: 0;
-  position: relative;
+  padding: 2rem;
+  margin-left: 25%;
+  margin-top: 20%;
 }
 
 .card-body {
@@ -291,7 +291,10 @@ footer {
   .card-title {
     font-size: 100%;
     line-height: 1.3;
-    width: 50%;
+  }
+
+  .card-body {
+    position: absolute;
   }
 
   .card-one {
@@ -367,6 +370,8 @@ footer {
     .card-title {
     font-size: 110%;
     line-height: 1.4;
+    position: relative;
+    right: 12%;
   }
 
   .card-one {
@@ -553,6 +558,14 @@ footer {
   .nav-icon {
     visibility: hidden;
     width: 35%;
+  }
+
+  .card-picture {
+    width: 20%;
+    position: relative;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
   }
 
 }
