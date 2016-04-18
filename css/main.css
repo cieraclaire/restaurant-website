@@ -5,7 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -14,7 +14,7 @@ html {
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* start of nav */
@@ -43,6 +43,12 @@ nav a, nav ul, nav li {
   font-family: "Open Sans";
   font-weight: 400;
   margin-left: 4rem;
+}
+
+nav a {
+  background-color: grey;
+  border: 3px;
+  color: #fff;
 }
 /* end of nav */
 
@@ -133,7 +139,7 @@ body {
 /* end of body */
 
 /* start of hover */
-nav a:hover {
+nav ul:hover {
   color: orange;
 }
 
@@ -168,8 +174,8 @@ nav a:hover {
 .card-healthy-mind {
   border-style: solid;
   border-color: #fff;
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
 }
 
 .card-picture {
@@ -200,7 +206,7 @@ nav a:hover {
 .card-healthy-body {
   border-style: solid;
   border-color: #fff;
-  padding: 1rem;
+  padding: 2rem;
   margin: 0;
 }
 
@@ -367,7 +373,7 @@ footer {
     margin-left: 0;
   }
 
-    .card-title {
+  .card-title {
     font-size: 110%;
     line-height: 1.4;
     position: relative;
@@ -433,17 +439,21 @@ footer {
   }
 
   .card-picture {
-    width: 28%;
+    width: 40%;
     position: relative;
-    right: 32%;
-    padding-top: 8%;
+    float: right;
+    margin-left: 2%;
+    padding-top: 0%;
+    left: 2%;
   }
 
   .card-picturetwo {
-    width: 28%;
+    width: 40%;
     position: relative;
     float: right;
-    padding-top: 8%;
+    margin-left: 2%;
+    padding-top: 0%;
+    left: 2%;
   }
 
   .card-picturethree {
