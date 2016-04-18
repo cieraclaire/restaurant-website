@@ -488,6 +488,9 @@ footer {
   .card-title {
     font-size: 120%;
     line-height: 1.4;
+    position: absolute;
+    right: 15%;
+    bottom: 35%;
   }
 
   .card-one {
@@ -507,9 +510,15 @@ footer {
     padding-bottom: 40%;
   }
 
-  h2 {
-    font-size: 120%;
-    line-height: 1.4;
+  .need {
+    position: absolute;
+    top: 63%;
+    left: 24%;
+  }
+
+  .btn-subtle {
+    position: absolute;
+    top: 80%;
   }
 
   h3 {
