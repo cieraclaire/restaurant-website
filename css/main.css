@@ -16,7 +16,6 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
 /* start of nav */
 .navigation {
   position: fixed;
@@ -33,6 +32,11 @@ html {
   padding-top: 1rem;
 }
 
+nav {
+  position: relative;
+  z-index: 2000;
+}
+
 nav a, nav ul, nav li {
   display: block;
   padding: .5em .75em;
@@ -44,20 +48,13 @@ nav a, nav ul, nav li {
   font-weight: 400;
   margin-left: 4rem;
 }
-
-nav a {
-  background-color: grey;
-  border: 3px;
-  color: #fff;
-}
 /* end of nav */
 
-/* start of headers */
-header {
+/* start of headers */header {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgba(255, 255, 255, 0.2);
-  padding: 0px;
+  padding: 0;
 }
 
 h1 {
@@ -139,22 +136,18 @@ body {
 /* end of body */
 
 /* start of hover */
-nav ul:hover {
-  color: orange;
+nav a:hover {
+  background-color: orange;
 }
-
 .package:hover {
   color: orange;
 }
 /* end of hover */
-
-
 .need {
   font-family: "Open Sans";
   font-weight: 400;
   color: #fff;
   font-size: 2rem;
-  text-align: center;
 }
 
 .card-chefs {
@@ -258,7 +251,31 @@ footer {
   text-decoration: none;
 }
 
+.facebook {
+  width: 4%;
+  position: relative;
+  left: 85%;
+  top: 50%:
+}
+
+.instagram {
+  width: 4%;
+  position: relative;
+  left: 86%;
+}
+
+.twitter {
+  width: 4%;
+  position: relative;
+  left: 87%;
+}
+
 @media only screen and (min-width: 25em) {
+
+  .img-flex {
+    position: relative;
+    width: 100%;
+  }
 
   .circle {
     position: relative;
@@ -297,10 +314,14 @@ footer {
   .card-title {
     font-size: 100%;
     line-height: 1.3;
+    position: absolute;
+    right: 10%;
+    bottom: 35%;
   }
 
   .card-body {
-    position: absolute;
+    right: 50%;
+    top: -50%;
   }
 
   .card-one {
@@ -318,16 +339,6 @@ footer {
     font-weight: 400;
   }
 
-  h2 {
-    font-size: 100%;
-    line-height: 1.3;
-  }
-
-  h3 {
-    font-size: 100%;
-    line-height: 1.3;
-  }
-
   nav li {
     display: inline-block;
     text-align: center;
@@ -336,6 +347,17 @@ footer {
 
   .nav-icon {
     width: 5%;
+  }
+
+  .need {
+    position: absolute;
+    top: 55%;
+    left: 9%;
+  }
+
+  .btn-subtle {
+    position: absolute;
+    top: 75%;
   }
 
 }
@@ -353,17 +375,15 @@ footer {
   }
 
   .card-picture {
-    width: 28%;
+    width: 40%;
     position: relative;
-    right: 32%;
-    padding-top: 17%;
+    left: 3%;
   }
 
   .card-picturetwo {
-    width: 28%;
+    width: 40%;
     position: relative;
-    right: 32%;
-    padding-top: 17%;
+    left: 3%;
   }
 
   .card-picturethree {
@@ -374,10 +394,11 @@ footer {
   }
 
   .card-title {
-    font-size: 110%;
-    line-height: 1.4;
-    position: relative;
-    right: 12%;
+    font-size: 100%;
+    line-height: 1.3;
+    position: absolute;
+    right: 17%;
+    bottom: 35%;
   }
 
   .card-one {
@@ -398,9 +419,10 @@ footer {
     padding-bottom: 40%;
   }
 
-  h2 {
-    font-size: 110%;
-    line-height: 1.4;
+  .need {
+    position: absolute;
+    top: 57%;
+    left: 16%;
   }
 
   h3 {
@@ -496,16 +518,16 @@ footer {
   }
 
   nav ul {
-  display: inline-block;
-  vertical-align: middle;
-}
+    display: inline-block;
+    vertical-align: middle;
+  }
 
   nav a {
     display: block;
     padding: .5em .75em;
     color: #333;
     text-decoration: none;
-}
+  }
 
   nav li {
     visibility: visible;
