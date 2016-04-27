@@ -1,72 +1,88 @@
 <!DOCTYPE html>
-<html lang="en-ca">
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Savoir Fare</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Savoir Fare</title>
+	<meta charset="utf-8"/>
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <section class="navigation">
-      <h1>Savoir Fare</h1>
-      <a href="#"><img class="nav-icon" src="images/nav-icon.svg" alt=""></a>
-    </section>
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Location</a></li>
-        <li><a href="#">Menu</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="banner">
-    <img class="img-flex" src="images/placeholder-16by9.svg" alt="">
-    <div class="card-body">
-      <h2 class="card-title"><span>Be Healthy & Save Money</span></h2>
-      <p class="need">Eat Smart, Eat Right, Eat Fast</p>
-      <p class="btn-subtle"><a class="package" href="#">Packages</a></p>
-    </div>
-  </div>
-  <a href="#"><img class="circle" src="images/placeholder-circle.svg" alt=""></a>
-  <a href="#"><img class="circle" src="images/placeholder-circle.svg" alt=""></a>
-  <a href="#"><img class="circle" src="images/placeholder-circle.svg" alt=""></a>
-  <a href="#"><img class="circle" src="images/placeholder-circle.svg" alt=""></a>
-  <a href="#card-healthy-body"><img class="card" src="images/placeholder-2by3.svg" alt=""></a>
-  <a href="#card-healthy-mind"><img class="card" src="images/placeholder-2by3.svg" alt=""></a>
-  <a href="#card-packages"><img class="card" src="images/placeholder-2by3.svg" alt=""></a>
-  <a href="#card-chefs"><img class="card" src="images/placeholder-2by3.svg" alt=""></a>
-  <main>
-    <section class="card-healthy-body">
-      <h2>Healthy Body</h2>
-      <img class="card-picture" src="images/placeholder-2by3.svg" alt="">
-      <p class="card-one">As a student, one may find it diffcult to keep up with a simple workout regime. With studies and work, there is little to no time to keep up with a healthy and social life. Keep up with weekly beginner, intermediate and advance workout regimes that can easily fit into your schedule! Put more text!Put more text!Put more text! Put more text!Put more text!Put more text! Put more text!Put more text!Put more text! Put more text!Put more text!Put more text! Put more text!Put more text!Put more text! Put more text!Put more text!</p>
-    </section>
+	<header>
+		<a href="#"><h2 class="logo">Savoir Fare</h2></a>
+		<input type="checkbox" class="nav-check" id="nav-check">
+		<label class="nav-label" for="nav-check"><img class="nav-icon" src="images/nav-icon.svg" alt="Open Navigation">
+			<img class="nav-icon-hover" src="images/nav-icon-hover.svg" alt="Open Navigation">
+			<img class="nav-icon-close" src="images/nav-icon-close.svg" alt="Close Navigation">
+			<img class="nav-icon-close-hover" src="images/nav-icon-close-hover.svg" alt="Close Navigation">
+		</label>
+		<nav>
+			<div class="nav-content">
+				<ul>
+					<li><a class="about" href="#about">About</a></li>
+					<li><a class="menu" href="#menu">Menu</a></li>
+					<li><a class="location" href="#location">Location</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-    <section class="card-healthy-mind">
-      <h2 class="mind">Healthy Mind</h2>
-      <img class="card-picturetwo" src="images/placeholder-2by3.svg" alt="">
-      <p class="card-two">Your mind can be very fragile. That’s why we are eager to give students the brain food they need to keep their focus and increase their skill building. We have also incorporated daily excercises for the mind to keep it healthy and ready to start the day! Mental health is a very important topic, and we are adament about keeping our students safe and happy 24/7. With the right nourishements and proper excercise routines, both mentally and physically, you are guaranteed to a smoother course straight through to the end of the year!</p>
-    </section>
+<section class="banner">
+	<div class="banner-body">
+		<img class="img-flex" src="images/placeholder-16by9.svg" alt="">
+		<h1>Be Healthy & Save Money</h1>
+		<h3>Eat Smart, Eat Right, Eat Fast</h3>
+		<a class="btn-subtle" href="#packages">Packages</a>
+		<hr></hr>
+</section>
 
-    <section class="card-packages">
-      <h2 class="packages">Packages</h2>
-      <img class="card-picturethree" src="images/placeholder-2by3.svg" alt="">
-      <p class="card-three">Our packages are not only delicious, but convenient. Students who are new to the vegan life, or who have been a part of this lifestyle but can’t keep up with market prices, will benefit from our services. We offer locally made fruits and vegetables. These packages are ready–made with a 2 day delivery, no shipping fee. We also offer seasonal packages, designed to fit every holiday! There is also a Build–it–yourself section for students who are particular about what types of fruits and vegetables they enjoy, as well as for students who have allergies. There are also plans available for students who would rather have their packages delivered weekly on a specific day. Inside each package is a new excercise routine for both the mind and body!</p>
-    </section>
+<section class="buttons">
+	<a href="#"><img class="circle-one" src="images/placeholder-circle.svg" alt=""></a>
+	<a href="#"><img class="circle-two" src="images/placeholder-circle.svg" alt=""></a>
+	<a href="#"><img class="circle-three" src="images/placeholder-circle.svg" alt=""></a>
+	<a href="#"><img class="circle-four" src="images/placeholder-circle.svg" alt=""></a>
+</section>
 
-    <section class="card-chefs">
-      <h2 class="chefs">Meet the Chefs!</h2>
-      <p class="card-four">The student–chefs here at Algonquin are dedicated to making delicious meals for those who are looking for something close to home. Our chefs are committed to keeping students happy and healthy. They are also open to suggestions on what up and coming packages should obtain. Suggestions are what keeps these chefs on their feet and willing to learn and build their skill. Click on the pictures below to learn more about the team! </p>
-    </section>
+<section class="card-titles">
+	<a class="healthy-body"href="#">Healthy Body</a>
+	<a class="healthy-mind"href="#">Healthy Mind</a>
+	<a class="packages" href="#">Packages</a>
+	<a class="chefs" href="#">Meet the Chefs</a>
+</section>
 
-  </main>
-  <footer>
-    <p class="savoir-fare">©Savoir Fare 2016</p>
-    <a href="#"><img class="facebook" src="images/placeholder-circle.svg" alt=""></a>
-    <a href="#"><img class="instagram" src="images/placeholder-circle.svg" alt=""></a>
-    <a href="#"><img class="twitter" src="images/placeholder-circle.svg" alt=""></a>
-  </footer>
+<main>
+	<section class="body-content">
+		<h2 class="body-title">Healthy Body</h2>
+		<p class="healthy-paragraph">Our mind can be very fragile. That’s why we are eager to give students the brain food they need to keep their focus and increase their skill building. We have also incorporated daily excercises for the mind to keep it healthy and ready to start the day! Mental health is a very important topic, and we are adament about keeping our students safe and happy 24/7. With the right nourishements and proper excercise routines, both mentally and physically, you are guaranteed to a smoother course straight through to the end of the year!</p>
+		<img class="body-picture" src="images/placeholder-4by3.svg" alt="">
+	</section>
+
+<section class="mind-content">
+	<h2 class="mind-title">Healthy Mind</h2>
+	<p class="mind-paragraph">Our packages are not only delicious, but convenient. Students who are new to the vegan life, or who have been a part of this lifestyle but can’t keep up with market prices, will benefit from our services. We offer locally made fruits and vegetables. These packages are ready–made with a 2 day delivery, no shipping fee. We also offer seasonal packages, designed to fit every holiday! There is also a Build–it–yourself section for students who are particular about what types of fruits and vegetables they enjoy, as well as for students who have allergies.  There are also plans available for students who would rather have their packages delivered weekly on a specific day. Inside each package is a new excercise routine for both the mind and body!</p>
+	<img class="mind-picture" src="images/placeholder-4by3.svg" alt="">
+</section>
+
+<section class="packages-title">
+	<h2 class="packages-title">Packages</h2>
+	<p class="packages-paragraph">Our packages are not only delicious, but convenient. Students who are new to the vegan life, or who have been a part of this lifestyle but can’t keep up with market prices, will benefit from our services. We offer locally made fruits and vegetables. These packages are ready–made with a 2 day delivery, no shipping fee. We also offer seasonal packages, designed to fit every holiday! There is also a Build–it–yourself section for students who are particular about what types of fruits and vegetables they enjoy, as well as for students who have allergies.  There are also plans available for students who would rather have their packages delivered weekly on a specific day. Inside each package is a new excercise routine for both the mind and body!</p>
+	<img class="packages-picture" src="images/placeholder-4by3.svg" alt="">
+</section>
+
+<section class="chefs-title">
+	<h2 class="chefs-title">Meet the Chefs</h2>
+	<p class="chefs-paragraph">The student–chefs here at Algonquin are dedicated to making delicious meals for those who are looking for something close to home. Our chefs are committed to keeping students happy and healthy. They are also open to suggestions on what up and coming packages should obtain. Suggestions are what keeps these chefs on their feet and willing to learn and build their skill.  The Chefs are respectable and cautious to those who are gluten free, dairy free, and have allergies.  Click on the pictures below to learn more about the team!  Feel free to email us your ideas and suggestions for improvements! Please indicate any food allergies before starting the Vegan Package Plan.</p>
+	<img class="chefs-picture" src="images/placeholder-4by3.svg" alt="">
+	<hr class="footer-section"></hr>
+</section>
+</main>
+
+<footer>
+	<p>©Savoir Fare all rights reserved</p>
+	<a href="#"><img class="facebook" src="images/placeholder-circle.svg" alt=""></a>
+	<a href="#"><img class="instagram" src="images/placeholder-circle.svg" alt=""></a>
+	<a href="#"><img class="twitter" src="images/placeholder-circle.svg" alt=""></a>
+</footer>
+
 </body>
 </html>
