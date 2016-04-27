@@ -5,465 +5,424 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font: normal 100%/1.3 "Open Sans" sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 hr {
-   display: block;
-   position: relative;
-   padding: 0;
-   margin: 8px auto;
-   height: 0;
-   width: 100%;
-   max-height: 0;
-   font-size: 1px;
-   line-height: 0;
-   clear: both;
-   border: none;
-   border-top: 1px solid #aaaaaa;
-   border-bottom: 1px solid #ffffff;
-   top: 2rem;
-}
-
-.footer-section {
-   display: block;
-   position: relative;
-   padding: 0;
-   margin: 8px auto;
-   height: 0;
-   width: 100%;
-   max-height: 0;
-   font-size: 1px;
-   line-height: 0;
-   clear: both;
-   border: none;
-   border-top: 1px solid #aaaaaa;
-   border-bottom: 1px solid #ffffff;
-   bottom: 5rem;
-}
-
-/* NAV */
-
-nav {
-  display: none;
-  padding: 1em 3em 3em;
-}
-
-nav a {
-  font-size: 1rem;
-  padding: 1rem 1.25rem;
-  display: inline-block;
-  width: 100%;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-}
-
-nav a:hover {
-  color: orange;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-
-.nav-check {
-  position: absolute;
-  top: -3rem;
-}
-
-.nav-label {
-  cursor: pointer;
-}
-
-.nav-icon {
-  position: relative;
-  width: 2em;
-  float: right;
-  bottom: 5rem;
-  left: 13rem;
-}
-
-.nav-icon-hover {
-  display: none;
-}
-
-.nav-icon-close {
-  display: none;
-}
-
-.nav-icon-close-hover {
-  display: none;
-}
-
-/* END NAV */
-
-h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
-.logo:hover {
-  color: #fff;
+  border: none;
+  border-top: 3px solid orange;
+  border-bottom: 3px solid #orange;
   background-color: orange;
-  margin-right: 38rem;
-}
-
-.img-flex {
+  width: 90%;
   position: relative;
-  width:127%;
+  top: .5rem;
 }
 
-h1, h3, .btn-subtle {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 2000;
+}
+
+.banner-pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.body-picture, .mind-picture, .packages-picture, .chefs-picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-body {
+  position: absolute;
+  left: 15%;
+  top: 3rem;
+  color: #fff;
+}
+
+.banner-navigation {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  right: 2%;
+  display: block;
 }
 
 h1 {
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: .75rem;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
   position: relative;
-  bottom: 28rem;
-  left: 6rem;
+  right: 1rem;
+  top: 1rem;
 }
 
 h3 {
-  font-weight: normal;
-  bottom: 24rem;
-  left: 6rem;
+  font-size: .9rem;
+  margin: 0;
+  text-align: center;
   position: relative;
+  right: 1rem;
+  top: 1rem;
 }
 
-.btn-subtle {
+h4 {
   position: relative;
-  font-weight: lighter;
+  top: 1rem;
+}
+
+.mind-link, .body-link, .packages-link, .chefs-link {
+  position: relative;
   text-decoration: none;
-  position: relative;
-  bottom: 30rem;
-  left: 25rem;
+  top: 1.5rem;
+  font-size: .73rem;
+  left: .17rem;
+  font-weight: bold;
 }
 
-.btn-subtle:hover {
-  color: #fff;
+.instagram, .facebook, .twitter {
+  width: 20%;
+}
+
+.facebook {
+  position: relative;
+  left: 3rem;
+}
+
+.instagram {
+  position: relative;
+  left: 4rem;
+}
+
+.twitter {
+  position: relative;
+  left: 5rem;
+}
+
+.instagram, .twitter {
+  position: relative;
+  bottom: 1rem;
+}
+
+.mind-link:hover {
   background-color: orange;
-  border: solid transparent;
-  border-radius: 0.10rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.body-link:hover {
+  background-color: orange;
+  color: #fff;
+  font-weight: bold;
+}
+
+.pacakages-link:hover {
+  background-color: orange;
+  color: #fff;
+  font-weight: bold;
+}
+
+.chefs-link:hover {
+  background-color: orange;
+  color: #fff;
+  font-weight: bold;
 }
 
 .circle-one, .circle-two, .circle-three, .circle-four {
   position: relative;
   width: 20%;
-  bottom: 13rem;
-  left: 4rem;
+  left: 1.4rem;
+  top: 1rem;
 }
 
-.healthy-body, .healthy-mind, .packages, .chefs {
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.banner-nav {
+  display: none;
+}
+
+.nav-check {
+  position: absolute;
+  top: -5em;
+}
+
+.nav-icon-open, .nav-icon-close {
+  width: 20px;
+}
+
+.nav-icon-close {
+  display: none;
   position: relative;
-  bottom: 6rem;
-  left: 1rem;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
+  bottom: 4.5rem;
 }
 
-.healthy-body:hover {
-  background-color: orange;
-  color: #fff;
+.nav-check:checked ~ .nav-label .nav-icon-close {
+  display: block;
 }
 
-.healthy-mind:hover {
-  background-color: orange;
-  color: #fff;
+.nav-check:checked ~ .nav-label .nav-icon-open {
+  display: none;
 }
 
-.packages:hover {
-  background-color: orange;
-  color: #fff;
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: inline-block;
+  width: 50px;
+  float: right;
+  right: 0;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 18.5rem;
 }
 
-.chefs:hover {
-  background-color: orange;
-  color: #fff;
-}
-
-.body-picture, .mind-picture {
-  position: relative;
-  width: 50%;
-  bottom: 4rem;
-}
-
- .packages-picture, .chefs-picture {
-   position: relative;
-   width: 50%;
- }
-
-.body-title, .healthy-paragraph, .mind-title, .mind-paragraph {
-  position: relative;
-  bottom: 4rem;
-}
-
-.packages-title {
-  top: 1.6rem;
-}
-
-.facebook, .instagram, .twitter {
-  position: relative;
-  width: 10%;
-  left: 34rem;
-  bottom: 5rem;
-}
-
-footer {
+.nav {
+  margin: 0;
   padding: 0;
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  background-color: orange;
+  right: 0;
+  top: 50%;
+  width: 15em;
+}
+
+nav a {
+  display: block;
+  padding: .5em .75em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+  display: block;
+}
+
+
+
+body {
   margin: 0;
 }
 
-@media only screen and (min-width: 25em) {
+.banner-body {
+  max-width: 30em;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.btn-subtle {
+  color: #fff;
+  text-decoration: none;
+  border-width: 10px;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 6px;
+  border: solid transparent;
+  font-weight: bold;
+  color: #fff;
+  border-left-width: 2.5rem;
+  border-right-width: 2.5rem;
+  border-top-width: 1rem;
+  border-bottom-width: 1rem;
+  position: relative;
+  right: 1rem;
+  top: 1rem;
+}
+
+.btn-subtle:hover {
+  background-color: orange;
+  border: solid transparent;
+  border-radius: .3rem;
+  border-left-width: 2.5rem;
+  border-right-width: 2.5rem;
+  border-top-width: 1rem;
+  border-bottom-width: 1rem;
+}
+
+footer {
+  position: relative;
+  background-color: orange;
+}
+
+@@media only screen and (min-width: 25em) {
 
   html {
     font-size: 100%;
-    line-height: 1.3;
+    line-height: 1.3
   }
 
-  h1, h3 {
-    position: relative;
-    bottom: 21rem;
+  nav li {
+    display: inline-block;
+  }
+
+  h2 {
     font-size: 2rem;
   }
 
-  .circle-one {
-    position: relative;
-    bottom: 11rem;
-    width: 15%;
-    left: 6rem;
+  h3 {
+    font-size: 1rem;
   }
 
-  .circle-two {
-    position: relative;
-    bottom: 11rem;
-    width: 15%;
-    left: 8rem;
+  .btn-subtle {
+    font-size: 0.8rem;
   }
 
-  .circle-three {
-    position: relative;
-    bottom: 11rem;
-    width: 15%;
-    left: 10rem;
+  .nav {
+    width: 100%;
   }
 
-  .circle-four {
-    position: relative;
-    bottom: 11rem;
-    width: 15%;
-    left: 12rem;
-  }
-
-  .body-title, .mind-title, .packages-title, .chefs-title {
-    font-size: 2rem;
-  }
-
-  .healthy-paragraph, .mind-paragraph {
-    font-size: 2rem;
-    font-family: "Open Sans", sans-serif;
-  }
-
-  .facebook, .instagram, .twitter {
-    position: relative;
-    bottom: 2rem;
-  }
+  .nav li {
+    float: left;
+    width: 50%;
+}
 
 }
 
-@media only screen and (min-width: 38em) {
+@media online screen and (min-width: 38em) {
 
   html {
     font-size: 110%;
     line-height: 1.4;
   }
 
-  h1, h3 {
-    position: relative;
-    bottom: 21rem;
-    font-size: 2rem;
+  h1 {
+    font-size: 1.5rem;
   }
 
-  .circle-one {
-    position: relative;
-    bottom: 11rem;
-    width: 15%;
-    left: 6rem;
+  h2 {
+    font-size: 2.7rem;
   }
 
-  .circle-two {
-    position: relative;
-    bottom: 11rem;
-    width: 15%;
-    left: 8rem;
+  h3 {
+    font-size: 1.3rem;
   }
 
-  .circle-three {
-    position: relative;
-    bottom: 11rem;
-    width: 15%;
-    left: 10rem;
+  .btn-subtle {
+    font-size: 0.8rem;
   }
 
-  .circle-four {
-    position: relative;
-    bottom: 11rem;
-    width: 15%;
-    left: 12rem;
+  .banner-content {
+    left: 15%;
+    top: 5rem;
   }
 
-  .body-title, .mind-title, .packages-title, .chefs-title {
-    font-size: 2rem;
-  }
-
-  .healthy-paragraph, .mind-paragraph {
-    font-size: 2rem;
-    font-family: "Open Sans", sans-serif;
-  }
-
-  .facebook, .instagram, .twitter {
-    position: relative;
-    bottom: 2rem;
+  .banner-navigation {
+    text-align: right;
   }
 
 }
 
-@media only screen and (min-width: 60em) {
+@@media only screen and (min-width: 60em) {
 
   html {
     font-size: 120%;
     line-height: 1.5;
   }
 
-  h1, h3 {
-    position: relative;
-    bottom: 35rem;
-    font-size: 3rem;
-    left: 10rem;
+  header {
+    text-align: left;
+  }
+
+  h1, nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
   }
 
   .btn-subtle {
-    position: relative;
-    left: 40rem;
-    font-size: 2rem;
-    bottom: 35rem;
+    font-size: 0.8rem;
   }
 
-  .circle-one {
-    position: relative;
-    bottom: 16rem;
-    width: 18%;
-    left: 9rem;
-  }
-
-  .circle-two {
-    position: relative;
-    bottom: 16rem;
-    width: 18%;
-    left: 15rem;
-  }
-
-  .circle-three {
-    position: relative;
-    bottom: 16rem;
-    width: 18%;
-    left: 21rem;
-  }
-
-  .circle-four {
-    position: relative;
-    bottom: 16rem;
-    width: 18%;
-    left: 27rem;
-  }
-
-  .body-title, .mind-title, .packages-title, .chefs-title {
-    font-size: 2rem;
-    padding: 0;
-    margin: 0;
-  }
-
-  .healthy-paragraph, .mind-paragraph {
-    font-size: 2rem;
-    font-family: "Open Sans", sans-serif;
-  }
-
-  .facebook, .instagram, .twitter {
-    position: relative;
-    bottom: 2rem;
-    left: 65rem;
-  }
-
-  .healthy-body, .healthy-mind, .packages, .chefs {
-    position: relative;
-    bottom: 8rem;
-  }
-
-  .healthy-body {
-    position: relative;
-    left: 9rem;
-  }
-
-  .healthy-mind {
-    position: relative;
-    left: 15rem;
-  }
-
-  .packages {
-    position: relative;
-    left: 23rem;
-  }
-
-  .chefs {
-    position: relative;
-    left: 30rem;
-  }
-
-  .footer-section {
+  .nav-icon-open, .nav-icon-close {
     display: none;
   }
 
-  .logo:hover {
-    margin-right: 62rem;
+  .banner-navigation {
+    display: block;
   }
 
-  footer {
-    padding: 0;
-    margin: 0;
-    padding-top: 2rem;
+  nav li {
+    width: auto;
   }
 
-  hr {
-    position: relative;
-    left: 9.5rem;
+  .banner-navigation {
+    top: 0;
+  }
+
+  .banner-info {
+    left: 10%;
+    top: 5rem;
+  }
+
+  .banner-navigation {
+    background-color: inherit;
   }
 
 }
 
-@media only screen and (min-width: 90em) {
+@@media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
     line-height: 1.5;
   }
+
+  .banner-content {
+    left: 30%;
+    top: 20%;
+  }
+
 }
