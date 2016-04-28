@@ -76,21 +76,21 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   margin: 0;
   text-align: center;
+  display: block;
   position: relative;
-  right: 1rem;
-  top: 1rem;
+  right: 1.5rem;
 }
 
 h3 {
   font-size: .9rem;
   margin: 0;
   text-align: center;
+  display: block;
   position: relative;
-  right: 1rem;
-  top: 1rem;
+  right: 1.5rem;
 }
 
 h4 {
@@ -103,7 +103,7 @@ h4 {
   text-decoration: none;
   top: 1.5rem;
   font-size: .73rem;
-  left: .17rem;
+  left: 0.39rem;
   font-weight: bold;
 }
 
@@ -177,6 +177,8 @@ h4 {
 
 .nav-icon-open, .nav-icon-close {
   width: 20px;
+  position: relative;
+  left: 0.50rem;
 }
 
 .nav-icon-close {
@@ -269,8 +271,8 @@ body {
   border-top-width: 1rem;
   border-bottom-width: 1rem;
   position: relative;
-  right: 1rem;
-  top: 1rem;
+  right: 1.5rem;
+  bottom: 0.50rem;
 }
 
 .btn-subtle:hover {
@@ -288,7 +290,7 @@ footer {
   background-color: orange;
 }
 
-@@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 25em) {
 
   html {
     font-size: 100%;
@@ -299,17 +301,31 @@ footer {
     display: inline-block;
   }
 
-  h2 {
-    font-size: 2rem;
-  }
+h2, h3 {
+  position: relative;
+  left: 3rem;
+}
 
-  h3 {
-    font-size: 1rem;
-  }
+h2 {
+  font-size: 2.3rem;
+  position: relative;
+  top: 5rem;
+  left: 2rem;
+}
 
-  .btn-subtle {
-    font-size: 0.8rem;
-  }
+h3 {
+  font-size: 1.7rem;
+  position: relative;
+  top: 6rem;
+  left: 2rem;
+}
+
+.btn-subtle {
+  font-size: 1.7rem;
+  position: relative;
+  top: 7rem;
+  left: 2rem;
+}
 
   .nav {
     width: 100%;
@@ -318,6 +334,82 @@ footer {
   .nav li {
     float: left;
     width: 50%;
+}
+
+.nav-icon-open {
+  position: relative;
+  left: 29rem;
+}
+
+.facebook {
+  position: relative;
+  top: 1rem;
+}
+
+.facebook, .instagram, .twitter {
+  position: relative;
+  right: 3rem;
+}
+
+.circle-one {
+  position: relative;
+  left: 3rem;
+}
+
+.circle-two {
+  position: relative;
+  left: 4rem;
+}
+
+.circle-three {
+  position: relative;
+  left: 4.5rem;
+}
+
+.circle-four {
+  position: relative;
+  left: 5.5rem;
+}
+
+.chefs-link {
+  position: relative;
+  font-size: 1.2rem;
+  left: 12rem;
+}
+
+.packages-link {
+  position: relative;
+  font-size: 1.2rem;
+  left: 9.5rem;
+}
+
+.mind-link {
+  position: relative;
+  font-size: 1.2rem;
+  left: 6rem;
+}
+
+.body-link {
+  position: relative;
+  font-size: 1.2rem;
+  left: 4rem;
+}
+
+.facebook {
+  position: relative;
+  left: 8rem;
+}
+
+.instagram {
+  position: relative;
+  left: 10rem;
+  bottom: 1.3rem;
+}
+
+.twitter {
+  position: relative;
+  left: 12rem;
+  bottom: 1.3rem;
 }
 
 }
@@ -362,7 +454,7 @@ footer {
 
 }
 
-@@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 60em) {
 
   html {
     font-size: 120%;
@@ -379,31 +471,26 @@ footer {
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
+    position: relative;
+    left: 3rem;
   }
 
   h3 {
     font-size: 2rem;
+    position: relative;
+    left: 3rem;
   }
 
   .btn-subtle {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    position: relative;
+    left: 3rem;
   }
 
   .nav-icon-open, .nav-icon-close {
-    display: none;
-  }
-
-  .banner-navigation {
-    display: block;
-  }
-
-  nav li {
-    width: auto;
-  }
-
-  .banner-navigation {
-    top: 0;
+    position: relative;
+    left: 34rem;
   }
 
   .banner-info {
@@ -415,18 +502,188 @@ footer {
     background-color: inherit;
   }
 
+.body-link, {
+  position: relative;
+  left: 3rem;
 }
 
-@@media only screen and (min-width: 90em) {
+.mind-link {
+  position: relative;
+  left: 7rem;
+}
+
+.packages-link {
+  position: relative;
+  left: 12.5rem;
+}
+
+.chefs-link {
+  position: relative;
+  left: 18rem;
+}
+
+.circle-one {
+  position: relative;
+  left: 2rem;
+}
+
+.circle-two {
+  position: relative;
+  left: 4rem;
+}
+
+.circle-three {
+  position: relative;
+  left: 5rem;
+}
+
+.circle-four {
+  position: relative;
+  left: 7rem;
+}
+
+.instagram, .twitter {
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.facebook {
+  position: relative;
+  left: 9rem;
+}
+
+.instagram {
+  position: relative;
+  left: 11rem;
+}
+
+.twitter {
+  position: relative;
+  left: 13rem;
+}
+
+}
+
+@media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
     line-height: 1.5;
   }
 
-  .banner-content {
-    left: 30%;
-    top: 20%;
+  nav li {
+    display: inline-block;
+  }
+
+  h2, h3 {
+  position: relative;
+  left: 3rem;
+  }
+
+  h2 {
+  font-size: 4rem;
+  position: relative;
+  top: 9rem;
+  left: 9rem;
+  }
+
+  h3 {
+  font-size: 1.7rem;
+  position: relative;
+  top: 9rem;
+  left: 9rem;
+  }
+
+  .btn-subtle {
+  font-size: 1.7rem;
+  position: relative;
+  top: 9rem;
+  left: 9rem;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav li {
+    float: left;
+    width: 50%;
+  }
+
+  .nav-icon-open {
+  position: relative;
+  left: 50rem;
+  }
+
+  .facebook {
+  position: relative;
+  top: 1rem;
+  }
+
+  .facebook, .instagram, .twitter {
+  position: relative;
+  right: 3rem;
+  }
+
+  .circle-one {
+  position: relative;
+  left: 3rem;
+  }
+
+  .circle-two {
+    position: relative;
+    left: 5rem;
+}
+
+.circle-three {
+  position: relative;
+  left: 7rem;
+}
+
+.circle-four {
+  position: relative;
+  left: 9rem;
+}
+
+  .chefs-link {
+  position: relative;
+  font-size: 1.2rem;
+  left: 32rem;
+  }
+
+  .packages-link {
+  position: relative;
+  font-size: 1.2rem;
+  left: 22rem;
+  }
+
+  .mind-link {
+  position: relative;
+  font-size: 1.2rem;
+  left: 13rem;
+  }
+
+  .body-link {
+  position: relative;
+  font-size: 1.2rem;
+  left: 5.5rem;
+  }
+
+  .facebook {
+  position: relative;
+  left: 8rem;
+  }
+
+  .instagram {
+  position: relative;
+  left: 10rem;
+  bottom: 2.5rem;
+  }
+
+  .twitter {
+  position: relative;
+  left: 12rem;
+  bottom: 2.5rem;
   }
 
 }
