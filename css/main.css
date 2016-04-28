@@ -243,8 +243,6 @@ nav li {
   display: block;
 }
 
-
-
 body {
   margin: 0;
 }
@@ -354,6 +352,12 @@ footer {
 
   .banner-navigation {
     text-align: right;
+  }
+
+  .body-picture {
+    position: relative;
+    float: right;
+    width: 50%;
   }
 
 }
