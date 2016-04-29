@@ -658,19 +658,19 @@ footer {
   }
 
   .packages-nav:hover {
-    background-color: #D4C4E9;
+    background-color: #806EA9;
     border-radius: 5rem;
     border-width: 5px;
   }
 
   .location-nav:hover {
-    background-color: #D4C4E9;
+    background-color: #806EA9;
     border-radius: 5rem;
     border-width: 5px;
   }
 
   .media-nav:hover {
-    background-color: #D4C4E9;
+    background-color: #806EA9;
     border-radius: 5rem;
     border-width: 5px;
   }
@@ -721,19 +721,19 @@ footer {
   }
 
   .packages-nav:hover {
-    background-color: #D4C4E9;
+    background-color: #806EA9;
     border-radius: 5rem;
     border-width: 5px;
   }
 
   .location-nav:hover {
-    background-color: #D4C4E9;
+    background-color: #806EA9;
     border-radius: 5rem;
     border-width: 5px;
   }
 
   .media-nav:hover {
-    background-color: #D4C4E9;
+    background-color: #806EA9;
     border-radius: 5rem;
     border-width: 5px;
   }
@@ -777,7 +777,7 @@ footer {
 
   .facebook, .instagram, .twitter {
     position: relative;
-    right: 3rem;
+    right: 2rem;
   }
 
   .circle-one {
@@ -826,18 +826,18 @@ footer {
 
   .facebook {
     position: relative;
-    left: 8rem;
+    left: 12rem;
   }
 
   .instagram {
     position: relative;
-    left: 10rem;
+    left: 14rem;
     bottom: 2.5rem;
   }
 
   .twitter {
     position: relative;
-    left: 12rem;
+    left: 17rem;
     bottom: 2.5rem;
   }
 
