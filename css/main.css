@@ -721,7 +721,9 @@ footer {
   }
 
   .packages-nav, .location-nav, .media-nav {
-    font-size: 3rem;
+    font-size: 2rem;
+    bottom: 3.5rem;
+    position: relative;
   }
 
   .packages-nav:hover {
