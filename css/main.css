@@ -720,6 +720,10 @@ footer {
     color: #fff;
   }
 
+  .packages-nav, .location-nav, .media-nav {
+    font-size: 3rem;
+  }
+
   .packages-nav:hover {
     background-color: #806EA9;
     border-radius: 5rem;
